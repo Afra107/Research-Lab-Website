@@ -38,8 +38,12 @@ A powerful tool for designing Entity-Relationship diagrams, facilitating effecti
 To run the project locally, follow these steps:
 
 Clone the repository.
+
 Set up the database using the provided SQL scripts.
+
 Configure the backend server with Python Flask.
+
 Open the web page in your preferred browser.
+
 
 Feel free to explore the documentation and contribute to the project!

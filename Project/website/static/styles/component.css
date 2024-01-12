@@ -1,0 +1,112 @@
+.group-child122 {
+  position: absolute;
+  top: 0px;
+  right: 0.1px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-sienna);
+  width: 152px;
+  height: 36px;
+}
+.news-events1 {
+  position: absolute;
+  top: 6px;
+  right: 0px;
+  font-size: var(--font-size-lg);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-peachpuff-100);
+  text-align: left;
+  width: 148px;
+  height: 16px;
+}
+.rectangle-parent83 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 152.1px;
+  height: 36px;
+}
+.group-child123 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-sienna);
+  width: 152px;
+  height: 36px;
+}
+.jobs1 {
+  position: absolute;
+  top: 6px;
+  right: 6.9px;
+  font-size: var(--font-size-lg);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-peachpuff-100);
+  text-align: center;
+  width: 141px;
+  height: 16px;
+}
+.rectangle-parent84 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 152px;
+  height: 36px;
+}
+.group-child124 {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-sienna);
+  width: 152px;
+  height: 36px;
+}
+.datasets1 {
+  position: absolute;
+  top: 6px;
+  right: 6.9px;
+  font-size: var(--font-size-lg);
+  display: inline-block;
+  font-family: var(--font-inter);
+  color: var(--color-peachpuff-100);
+  text-align: center;
+  width: 141px;
+  height: 16px;
+}
+.rectangle-parent85 {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 152px;
+  height: 36px;
+}
+.component {
+  margin-top: 0px;
+  margin-right: 0px;
+  position: relative;
+  background-color: var(--color-peachpuff-100);
+  width: 173px;
+  height: 149px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: var(--padding-3xs);
+  box-sizing: border-box;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  max-width: 90%;
+  max-height: 90%;
+  overflow: auto;
+}
+a{
+  color: inherit;
+}

@@ -1,0 +1,44 @@
+<!-- <html lang="en" dir="ltr">
+  <head>
+    {% block head %}
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='styles/mainpage.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>{% block title %}Home{% endblock %}</title>
+    {% endblock %}
+  </head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">SINES Research</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Publications</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Alumni</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">News & Events</a></li>
+      </ul>
+    </nav>
+    <div id = "main_content">{% block content %}{% endblock %}</div>
+  </body>
+</html> -->

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/jobs.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="jobs3">
+      <div class="yellow-rect"></div>
+      <div class="orange-rect"></div>
+      <div class="rectangle-parent43">
+        <div class="group-child38"></div>
+        <div class="join-the-dynamic">
+          Join the dynamic team at the Information retrieval and Intelligent
+          Systems Lab as we embark on exciting new projects that push the
+          boundaries of technology and innovation. We are currently seeking
+          talented individuals to fill the following positions and contribute to
+          our groundbreaking research and development efforts. If you're
+          passionate about cutting-edge technologies and want to be part of a
+          collaborative and forward-thinking environment, we invite you to
+          explore the job opportunities below.
+        </div>
+      </div>
+      <img class="image-2-icon" alt="" src="{{url_for('static', filename='/Image/opportunities.png')}}" />
+
+      <div class="red-rect"></div>
+      <div class="rectangle-parent44">
+        <div class="group-child39"></div>
+        <div class="click-here-to-container">
+          <p class="click-here-to">CLICK HERE TO APPLY!</p>
+          <p class="click-here-to">&nbsp;</p>
+        </div>
+      </div>
+      <div class="rectangle-parent45">
+        <div class="group-child40"></div>
+        <a class="httpsformsglewcfuuthre7cv",
+          href="https://forms.gle/WCFUUThRE7CVdoXYA">https://forms.gle/WCFUUThRE7CVdoXYA</a
+        >
+      </div>
+      <div class="vector-container">
+        <img class="group-child41" alt="" src="{{url_for('static', filename='/Image/blue_rectangle.png')}}" />
+
+        <div class="what-we-offer3"></div>
+        <div class="ai-consulting-new-container3">
+          <p class="click-here-to"></p>
+          <p class="click-here-to"></p>
+          <p class="click-here-to"></p>
+        </div>
+      </div>
+      <div class="group-parent4">
+        <img class="group-child42" alt="" src="{{url_for('static', filename='/Image/group-10.svg')}}" />
+
+        <div class="jobs-in-information-intellig-parent">
+          <div class="jobs-in-information">
+            JOBS IN INFORMATION & INTELLIGENT SYSTEM LAB
+          </div>
+          <div class="group-child43"></div>
+        </div>
+      </div>
+      <div class="navbar-rect">
+        <div class="sines-research4">SINES RESEARCH</div>
+        <div class="group-parent5">
+          <button class="rectangle-parent46">
+            <div class="group-child44"></div>
+            <i class="home4"><a href=home>HOME</a></i>
+          </button>
+          <button class="rectangle-parent47" id="groupButton1">
+            <div class="group-child45"></div>
+            <i class="projects4"><a href=projects>PROJECTS</a></i>
+          </button>
+          <button class="rectangle-parent48" id="groupButton2">
+            <div class="group-child46"></div>
+            <i class="publications3"><a href=publications>PUBLICATIONS</a></i>
+          </button>
+          <button class="rectangle-parent49">
+            <div class="group-child47"></div>
+            <i class="people4"><a href=team>PEOPLE</a></i>
+          </button>
+          <button class="rectangle-parent55" id="groupButton9">
+            <div class="group-child55"></div>
+            <i class="jobs4"><a href=jobs>JOBS</a></i>
+          </button>
+          <button class="rectangle-parent56" id="groupButton10">
+            <div class="group-child56"></div>
+            <i class="datasets5"><a href=datasets>DATASETS</a></i>
+          </button>
+          <button class="rectangle-parent57" id="groupButton11">
+            <div class="group-child57"></div>
+            <i class="news-events4"><a href=news-events>NEWS & EVENTS</a></i>
+          </button>
+        </div>
+        </div>
+        <div class="group-parent6">
+          <button class="rectangle-parent51">
+            <div class="group-child51"></div>
+            <i class="home5"><a href=home>HOME</a></i>
+          </button>
+          <button class="rectangle-parent47" id="groupButton6">
+            <div class="group-child45"></div>
+            <i class="projects4"><a href=projects>PROJECTS</a></i>
+          </button>
+          <button class="rectangle-parent53" id="groupButton7">
+            <div class="group-child46"></div>
+            <i class="publications4"><a href=publications>PUBLICATIONS</a></i>
+          </button>
+          <button class="rectangle-parent49" id="groupButton8">
+            <div class="group-child47"></div>
+            <i class="people4"><a href=team>PEOPLE</a></i>
+          </button>
+          <button class="rectangle-parent55" id="groupButton9">
+            <div class="group-child55"></div>
+            <i class="jobs4"><a href=jobs>JOBS</a></i>
+          </button>
+          <button class="rectangle-parent56" id="groupButton10">
+            <div class="group-child56"></div>
+            <i class="datasets5"><a href=datasets>DATASETS</a></i>
+          </button>
+          <button class="rectangle-parent57" id="groupButton11">
+            <div class="group-child57"></div>
+            <i class="news-events4"><a href=news-events>NEWS & EVENTS</a></i>
+          </button>
+        </div>
+      </div>
+      <div class="sines-research5">SINES RESEARCH</div>
+    </div>
+
+    <script>
+      var groupButton1 = document.getElementById("groupButton1");
+      if (groupButton1) {
+        groupButton1.addEventListener("click", function (e) {
+          window.location.href = "./projects.html";
+        });
+      }
+      
+      var groupButton2 = document.getElementById("groupButton2");
+      if (groupButton2) {
+        groupButton2.addEventListener("click", function (e) {
+          window.location.href = "./publication.html";
+        });
+      }
+      
+      var groupButton6 = document.getElementById("groupButton6");
+      if (groupButton6) {
+        groupButton6.addEventListener("click", function (e) {
+          window.location.href = "./projects.html";
+        });
+      }
+      
+      var groupButton7 = document.getElementById("groupButton7");
+      if (groupButton7) {
+        groupButton7.addEventListener("click", function (e) {
+          window.location.href = "./publication.html";
+        });
+      }
+      
+      var groupButton8 = document.getElementById("groupButton8");
+      if (groupButton8) {
+        groupButton8.addEventListener("click", function (e) {
+          window.location.href = "./people.html";
+        });
+      }
+      
+      var groupButton9 = document.getElementById("groupButton9");
+      if (groupButton9) {
+        groupButton9.addEventListener("click", function (e) {
+          window.location.href = "./jobs.html";
+        });
+      }
+      
+      var groupButton10 = document.getElementById("groupButton10");
+      if (groupButton10) {
+        groupButton10.addEventListener("click", function (e) {
+          window.location.href = "./datasets.html";
+        });
+      }
+      
+      var groupButton11 = document.getElementById("groupButton11");
+      if (groupButton11) {
+        groupButton11.addEventListener("click", function (e) {
+          window.location.href = "news-events.html";
+        });
+      }
+      </script>
+  </body>
+</html>

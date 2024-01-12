@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/projects.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="projects6">
+      <div class="vector-parent1">
+        <img class="group-child58" alt="" src="{{url_for('static', filename='/Image/blue_rectangle.png')}}" />
+
+        <div class="what-we-offer4"></div>
+        <div class="ai-consulting-new-container4">
+          <p class="ai-consulting4"></p>
+          <p class="ai-consulting4"></p>
+          <p class="ai-consulting4"></p>
+        </div>
+      </div>
+
+      <div class="frame-parent39">
+        <div class="frame-parent40">
+          {% for header in headings1 %}
+          <div class="project-title-wrapper">
+            <div class="project-title">{{header}}</div>
+          </div>
+          {% endfor %}
+        </div>
+        {% for row in viewtuple1 %}
+        <div class="frame-parent41">
+          {% for cell in row %}
+          <div class="project01-wrapper">
+            <div class="project-title">{{cell}}</div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="group-parent7">
+        <div class="group-parent8">
+          <div class="group-parent9">
+            <div class="rectangle-wrapper">
+              <div class="group-child59"></div>
+            </div>
+            <div class="improving-scholarly-article-by-wrapper">
+              <div class="improving-scholarly-article">
+                Improving Scholarly Article by Different Measures
+              </div>
+            </div>
+          </div>
+          <img
+            class="group-child60"
+            alt=""
+            src="{{url_for('static', filename='/Image/clipboard.png')}}"
+          />
+        </div>
+        <div class="rectangle-parent58">
+          <img
+            class="group-child60"
+            alt=""
+            src="{{url_for('static', filename='/Image/crawler.png')}}"
+          />
+
+          <div class="group-parent10">
+            <div class="rectangle-wrapper">
+              <div class="group-child59"></div>
+            </div>
+            <div class="improving-scholarly-article-by-wrapper">
+              <div class="improving-scholarly-article">
+                Crawling Ajax-based web applications
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle-parent59">
+          <img
+            class="group-child63"
+            alt=""
+            src="{{url_for('static', filename='/Image/01cloud.png')}}"
+          />
+
+          <div class="group-parent10">
+            <div class="rectangle-wrapper">
+              <div class="group-child59"></div>
+            </div>
+            <div class="improving-scholarly-article-by-wrapper">
+              <div class="improving-scholarly-article">
+                Video Big Data Analytics in the Cloud (siat.kr)
+              </div>
+            </div>
+          </div>
+        </div>
+        <b class="our-projects">Our Projects</b>
+      </div>
+      <div class="projects-child"></div>
+      <div class="projects-item"></div>
+      <div class="sines-research6">SINES RESEARCH</div>
+      <div class="group-parent12">
+        <img class="group-child65" alt="" src="{{url_for('static', filename='/Image/main_design.png')}}" />
+
+        <div class="line-group">
+          <div class="group-child66"></div>
+          <div class="all-projects">ALL PROJECTS</div>
+        </div>
+        <div class="projects-research">Projects & Research Grants</div>
+        <div class="explore-the-exciting">
+          Explore the exciting portfolio of amazing projects we've done
+        </div>
+      </div>
+      <img class="image-5-icon" alt="" src="{{url_for('static', filename='/Image/research_grant2.png')}}" />
+
+      <div class="group-parent13">
+        <button class="rectangle-parent60">
+          <div class="group-child67"></div>
+          <i class="home6"><a href=home>HOME</a></i>
+        </button>
+        <button class="rectangle-parent61" id="groupButton1">
+          <div class="group-child68"></div>
+          <i class="projects7"><a href=projects>PROJECTS</a></i>
+        </button>
+        <button class="rectangle-parent62" id="groupButton2">
+          <div class="group-child69"></div>
+          <i class="publications5"><a href=publications>PUBLICATIONS</a></i>
+        </button>
+        <button class="rectangle-parent63" id="groupButton3">
+          <div class="group-child70"></div>
+          <i class="people6"><a href=team>PEOPLE</a></i>
+        </button>
+        <button class="rectangle-parent64" id="groupButton4">
+          <div class="group-child71"></div>
+          <i class="jobs5"><a href=jobs>JOBS</a></i>
+        </button>
+        <button class="rectangle-parent65" id="groupButton5">
+          <div class="group-child72"></div>
+          <i class="datasets6"><a href=datasets>DATASETS</a></i>
+        </button>
+        <button class="rectangle-parent66" id="groupButton6">
+          <div class="group-child73"></div>
+          <i class="news-events5"><a href=news-events>NEWS & EVENTS</a></i>
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var groupButton1 = document.getElementById("groupButton1");
+      if (groupButton1) {
+        groupButton1.addEventListener("click", function (e) {
+          window.location.href = "./projects.html";
+        });
+      }
+      
+      var groupButton2 = document.getElementById("groupButton2");
+      if (groupButton2) {
+        groupButton2.addEventListener("click", function (e) {
+          window.location.href = "./publication.html";
+        });
+      }
+      
+      var groupButton3 = document.getElementById("groupButton3");
+      if (groupButton3) {
+        groupButton3.addEventListener("click", function (e) {
+          window.location.href = "./people.html";
+        });
+      }
+      
+      var groupButton4 = document.getElementById("groupButton4");
+      if (groupButton4) {
+        groupButton4.addEventListener("click", function (e) {
+          window.location.href = "./jobs.html";
+        });
+      }
+      
+      var groupButton5 = document.getElementById("groupButton5");
+      if (groupButton5) {
+        groupButton5.addEventListener("click", function (e) {
+          window.location.href = "./datasets.html";
+        });
+      }
+      
+      var groupButton6 = document.getElementById("groupButton6");
+      if (groupButton6) {
+        groupButton6.addEventListener("click", function (e) {
+          window.location.href = "news-events.html";
+        });
+      }
+      </script>
+  </body>
+</html>

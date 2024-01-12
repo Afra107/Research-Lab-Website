@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/component.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="component">
+      <button class="rectangle-parent83" id="popupgroupButton">
+        <div class="group-child122"></div>
+        <i class="news-events1"><a href=news-events>NEWS & EVENTS</a></i>
+      </button>
+      <button class="rectangle-parent84" id="popupgroupButton1">
+        <div class="group-child123"></div>
+        <i class="jobs1"><a href=jobs>JOBS</a></i>
+      </button>
+      <button class="rectangle-parent85" id="popupgroupButton2">
+        <div class="group-child124"></div>
+        <i class="datasets1"><a href=datasets>DATASETS</a></i>
+      </button>
+    </div>
+
+    <script>
+      var popupgroupButton = document.getElementById("popupgroupButton");
+      if (popupgroupButton) {
+        popupgroupButton.addEventListener("click", function (e) {
+          window.location.href = "./news-events.html";
+        });
+      }
+
+      var popupgroupButton1 = document.getElementById("popupgroupButton1");
+      if (popupgroupButton1) {
+        popupgroupButton1.addEventListener("click", function (e) {
+          window.location.href = "{{url_for('templates', filename='/jobs.html')}}";
+        });
+      }
+
+      var popupgroupButton2 = document.getElementById("popupgroupButton2");
+      if (popupgroupButton2) {
+        popupgroupButton2.addEventListener("click", function (e) {
+          window.location.href = "./datasets.html";
+        });
+      }
+    </script>
+  </body>
+</html>

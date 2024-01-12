@@ -1,0 +1,275 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/publication.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="publication">
+      <div class="frame-parent4">
+        <div class="frame-parent5">
+          {% for header in headings %}
+          <div class="no-wrapper">
+            <div class="no">{{header}}</div>
+          </div>
+          {% endfor %}
+        </div>
+        {% for link, data in dict.items() %}
+        <div class="frame-parent6">
+          {% for cell in data %}
+          <div class="wrapper">
+            <div class="no"><a href = "{{link}}">{{cell}}</a></div>
+          </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
+
+
+        <div class="frame-parent15">
+          <div class="frame-parent16">
+            {% for header in headings %}
+            <div class="no-wrapper">
+              <div class="no">{{header}}</div>
+            </div>
+            {% endfor %}
+          </div>
+          {% for link, data in dict.items() %}
+          <div class="frame-parent17">
+            {% for cell in data %}
+            <div class="wrapper">
+              <div class="no"><a href = "{{link}}">{{cell}}</a></div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+
+     
+      <div class="conference-rect" data-scroll-to="conferenceRect"></div>
+      <div class="conferences">Conferences</div>
+      <div class="bookrect" data-scroll-to="bookrect"></div>
+      <div class="books">Books</div>
+      <div class="publication-child"></div>
+      <div class="sines-research1">SINES RESEARCH</div>
+      <div class="group-parent5">
+        <button class="rectangle-parent5" id="groupButton">
+          <div class="group-child10"></div>
+          <i class="home1"><a href=home>HOME</a></i>
+        </button>
+        <button class="rectangle-parent6" id="groupButton1">
+          <div class="group-child11"></div>
+          <i class="projects2"><a href=projects>PROJECTS</a></i>
+        </button>
+        <button class="rectangle-parent7" id="groupButton2">
+          <div class="group-child12"></div>
+          <i class="publications1"><a href=publications>PUBLICATIONS</a></i>
+        </button>
+        <button class="rectangle-parent8" id="groupButton3">
+          <div class="group-child13"></div>
+          <i class="people1"><a href=team>PEOPLE</a></i>
+        </button>
+        <button class="rectangle-parent1" id="groupButton4">
+          <div class="group-child2"></div>
+          <i class="jobs"><a href=jobs>JOBS</a></i>
+        </button>
+        <button class="rectangle-parent2" id="groupButton5">
+          <div class="group-child3"></div>
+          <i class="datasets"><a href=datasets>DATASETS</a></i>
+        </button>
+        <button class="rectangle-parent3" id="groupButton6">
+          <div class="group-child4"></div>
+          <i class="news-events"><a href=news-events>NEWS & EVENTS</a></i>
+        </button>
+      </div>
+      <div class="group-parent6">
+        <img class="group-child18" alt="" src="{{url_for('static', filename='/Image/main_design.png')}}" />
+
+        <div class="all-publications">ALL PUBLICATIONS</div>
+        <div class="group-child19"></div>
+        <div class="publications-journals-confere-container">
+          <p class="journals-conferences">Publications</p>
+          <p class="journals-conferences">Journals, Conferences & Books</p>
+        </div>
+      </div>
+      <div class="journal-rect" data-scroll-to="journalRect"></div>
+      <div class="journals">Journals</div>
+      <div class="main-rect"></div>
+      <div class="journals-in-main" id="journalsInMainText">Journals</div>
+      <div class="conferences-in-main" id="conferencesInMainText">
+        Conferences
+      </div>
+      <div class="centre-in-rect" id="centreInRectText">Books</div>
+      <img class="publication-item" alt="" src="{{url_for('static', filename='/Image/journal.png')}}" />
+
+      <img class="publication-inner" alt="" src="{{url_for('static', filename='/Image/conference.png')}}" />
+
+      <img class="ellipse-icon" alt="" src="{{url_for('static', filename='/Image/books.png')}}" />
+
+
+        <div class="frame-parent27">
+          <div class="frame-parent5">
+            {% for header in headings %}
+            <div class="no-wrapper">
+              <div class="no">{{header}}</div>
+            </div>
+            {% endfor %}
+          </div>
+          {% for link, data in dict.items() %}
+          <div class="frame-parent6">
+            {% for cell in data %}
+            <div class="wrapper">
+              <div class="no"><a href = "{{link}}">{{cell}}</a></div>
+            </div>
+            {% endfor %}
+          </div>
+          {% endfor %}
+        </div>
+
+     
+
+      <img class="publication-child1" alt="" src="{{url_for('static', filename='/Image/blue_rectangle.png')}}" />
+
+      <div class="what-we-offer1"></div>
+      <div class="ai-consulting-new-container1">
+        <p class="journals-conferences"></p>
+        <p class="journals-conferences"></p>
+        <p class="journals-conferences"></p>
+      </div>
+    </div>
+
+    <!--<div id="componentContainer" class="popup-overlay" style="display: none">
+      <div class="component">
+        <button class="rectangle-parent83" id="popupgroupButton">
+          <div class="group-child122"></div>
+          <i class="news-events1">NEWS & EVENTS</i>
+        </button>
+        <button class="rectangle-parent84" id="popupgroupButton1">
+          <div class="group-child123"></div>
+          <i class="jobs1">JOBS</i>
+        </button>
+        <button class="rectangle-parent84" id="popupgroupButton2">
+          <div class="group-child123"></div>
+          <i class="jobs1">DATASETS</i>
+        </button>
+      </div>
+    </div> -->
+
+    <script>
+      var popupgroupButton = document.getElementById("popupgroupButton");
+      if (popupgroupButton) {
+        popupgroupButton.addEventListener("click", function (e) {
+          window.location.href = "./news-events.html";
+        });
+      }
+
+      var popupgroupButton1 = document.getElementById("popupgroupButton1");
+      if (popupgroupButton1) {
+        popupgroupButton1.addEventListener("click", function (e) {
+          window.location.href = "./jobs.html";
+        });
+      }
+
+      var popupgroupButton2 = document.getElementById("popupgroupButton2");
+      if (popupgroupButton2) {
+        popupgroupButton2.addEventListener("click", function (e) {
+          window.location.href = "./datasets.html";
+        });
+      }
+
+      var groupButton = document.getElementById("groupButton");
+      if (groupButton) {
+        groupButton.addEventListener("click", function (e) {
+          window.location.href = "./dashboard.html";
+        });
+      }
+
+      var groupButton1 = document.getElementById("groupButton1");
+      if (groupButton1) {
+        groupButton1.addEventListener("click", function (e) {
+          window.location.href = "/";
+        });
+      }
+
+      var groupButton2 = document.getElementById("groupButton2");
+      if (groupButton2) {
+        groupButton2.addEventListener("click", function (e) {
+          window.location.href = "publication.html";
+        });
+      }
+
+      var groupButton3 = document.getElementById("groupButton3");
+      if (groupButton3) {
+        groupButton3.addEventListener("click", function (e) {
+          window.location.href = "./people.html";
+        });
+      }
+
+      var groupButton4 = document.getElementById("groupButton4");
+      if (groupButton4) {
+        groupButton4.addEventListener("click", function () {
+          var popup = document.getElementById("componentContainer");
+          if (!popup) return;
+          var popupStyle = popup.style;
+          if (popupStyle) {
+            popupStyle.display = "flex";
+            popupStyle.zIndex = 100;
+            popupStyle.backgroundColor = "rgba(113, 113, 113, 0.3)";
+            popupStyle.alignItems = "center";
+            popupStyle.justifyContent = "center";
+          }
+          popup.setAttribute("closable", "");
+
+          var onClick =
+            popup.onClick ||
+            function (e) {
+              if (e.target === popup && popup.hasAttribute("closable")) {
+                popupStyle.display = "none";
+              }
+            };
+          popup.addEventListener("click", onClick);
+        });
+      }
+
+      var journalsInMainText = document.getElementById("journalsInMainText");
+      if (journalsInMainText) {
+        journalsInMainText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='journalRect']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var conferencesInMainText = document.getElementById(
+        "conferencesInMainText",
+      );
+      if (conferencesInMainText) {
+        conferencesInMainText.addEventListener("click", function () {
+          var anchor = document.querySelector(
+            "[data-scroll-to='conferenceRect']",
+          );
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+
+      var centreInRectText = document.getElementById("centreInRectText");
+      if (centreInRectText) {
+        centreInRectText.addEventListener("click", function () {
+          var anchor = document.querySelector("[data-scroll-to='bookrect']");
+          if (anchor) {
+            anchor.scrollIntoView({ block: "start", behavior: "smooth" });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>

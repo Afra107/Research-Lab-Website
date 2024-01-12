@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/global.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/datasets.css') }}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="datasets2">
+      <div class="group-parent2">
+        <img class="group-child26" alt="" src="{{url_for('static', filename='/Image/group-10.svg')}}" />
+
+        <div class="datasets-parent">
+          <div class="datasets3">DATASETS</div>
+          <div class="line-div"></div>
+        </div>
+      </div>
+      <img class="image-3-icon" alt="" src="{{url_for('static', filename='/Image/downloads.png')}}" />
+
+      <img class="image-4-icon" alt="" src="{{url_for('static', filename='/Image/datasets.png')}}" />
+
+      <div class="rectangle-parent34">
+        <div class="group-child27"></div>
+        <div class="datasetmisha-karim-2023-82235">
+          <p class="author">@dataset{misha_karim_2023_8223591,</p>
+          <p class="author">author = {Misha Karim},</p>
+          <p class="author">
+            title = {Human-Actions-in-Diverse-Environments-HAR-Approach},
+          </p>
+          <p class="author">month = aug,</p>
+          <p class="author">year = 2023,</p>
+          <p class="author">publisher = {Zenodo},</p>
+          <p class="author">doi = {10.5281/zenodo.8223591},</p>
+          <p class="author">url = {https://doi.org/10.5281/zenodo.8223591}</p>
+          <p class="author">}</p>
+        </div>
+      </div>
+      <div class="rectangle-parent35">
+        <div class="group-child28"></div>
+        <div class="group-child28"></div>
+        <div class="datasets-coming-soon">Datasets coming soon!</div>
+      </div>
+      <div class="vector-group">
+        <img class="group-child30" alt="" src="{{url_for('static', filename='/Image/blue_rectangle.png')}}" />
+
+        <div class="what-we-offer2"></div>
+        <div class="ai-consulting-new-container2">
+          <p class="author"></p>
+          <p class="author"></p>
+          <p class="author"></p>
+        </div>
+      </div>
+      <div class="sines-research-group">
+        <div class="sines-research3">SINES RESEARCH</div>
+        <div class="group-parent3">
+          <button class="rectangle-parent36">
+            <div class="group-child31"></div>
+            <i class="home3"><a href=home>HOME</a></i>
+          </button>
+          <button class="rectangle-parent37" id="groupButton1">
+            <div class="group-child32"></div>
+            <i class="projects3"><a href=projects>PROJECTS</a></i>
+          </button>
+          <button class="rectangle-parent38" id="groupButton2">
+            <div class="group-child33"></div>
+            <i class="publications2"><a href=publications>PUBLICATIONS</a></i>
+          </button>
+          <button class="rectangle-parent39" id="groupButton3">
+            <div class="group-child34"></div>
+            <i class="people3"><a href=team>PEOPLE</a></i>
+          </button>
+          <button class="rectangle-parent40" id="groupButton4">
+            <div class="group-child35"></div>
+            <i class="jobs2"><a href=jobs>JOBS</a></i>
+          </button>
+          <button class="rectangle-parent41" id="groupButton5">
+            <div class="group-child36"></div>
+            <i class="datasets4"><a href=datasets>DATASETS</a></i>
+          </button>
+          <button class="rectangle-parent42" id="groupButton6">
+            <div class="group-child37"></div>
+            <i class="news-events3"><a href=news-events>NEWS & EVENTS</a></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var groupButton1 = document.getElementById("groupButton1");
+      if (groupButton1) {
+        groupButton1.addEventListener("click", function (e) {
+          window.location.href = "./projects.html";
+        });
+      }
+      
+      var groupButton2 = document.getElementById("groupButton2");
+      if (groupButton2) {
+        groupButton2.addEventListener("click", function (e) {
+          window.location.href = "./publication.html";
+        });
+      }
+      
+      var groupButton3 = document.getElementById("groupButton3");
+      if (groupButton3) {
+        groupButton3.addEventListener("click", function (e) {
+          window.location.href = "./people.html";
+        });
+      }
+      
+      var groupButton4 = document.getElementById("groupButton4");
+      if (groupButton4) {
+        groupButton4.addEventListener("click", function (e) {
+          window.location.href = "./jobs.html";
+        });
+      }
+      
+      var groupButton5 = document.getElementById("groupButton5");
+      if (groupButton5) {
+        groupButton5.addEventListener("click", function (e) {
+          window.location.href = "./datasets.html";
+        });
+      }
+      
+      var groupButton6 = document.getElementById("groupButton6");
+      if (groupButton6) {
+        groupButton6.addEventListener("click", function (e) {
+          window.location.href = "news-events.html";
+        });
+      }
+      </script>
+  </body>
+</html>

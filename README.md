@@ -1,7 +1,7 @@
 # Research Lab Website Project
 
 ## Overview
-This repository contains the source code and documentation for the Research Lab Website project. The project focuses on the development of a robust and efficient website for a research lab, incorporating modern web development frameworks and database management techniques. Below is a summary of the project's progress, achievements, challenges, and modifications to the initial project plan.
+This repository contains the source code and documentation for the Research Lab Website project. The project focuses on the development of a robust and efficient website for a research lab, incorporating modern web development frameworks and database management techniques. Below is a summary of the project:
 
 ## Entity-Relationship Diagram (ERD)
 ![image](https://github.com/Afra107/Research-Lab-Website/assets/113014706/3d39e6a8-7dc1-491f-88ab-3c1713ecc995)
